@@ -101,6 +101,21 @@ html, body {
 	}
 
 	/*----
+		Close Button
+					----*/
+	#close {
+		width:4vh;
+		height:4vh;
+		border:1vh solid transparent;
+		position:absolute;
+		z-index:10;
+		top:2vh;
+		right:2vw;
+		border-radius:50%;
+		transition:all 0.75s ease;
+	}
+
+	/*----
 		Edit Slide
 				----*/
 	#edit-slide {
@@ -117,7 +132,7 @@ html, body {
 
 	#in-edit-s {
 		width:25vw;
-		height:166.65vh;
+		height:199.98vh;
 		overflow:hidden;
 		position:relative;
 		transition:all 0.75s ease;
@@ -155,4 +170,23 @@ html, body {
 		top:133.32vh;
 	}
 
+	#si-in-img {
+		top:166.65vh;
+	}
+
+	/*----
+		Edit Area
+				----*/
+	#edit-area {
+		width:25vw;
+		min-height:100vh;
+		background-color:#fff;
+		position:absolute;
+		z-index:100000;
+		top:0px;
+		left:-25vw;
+		position:fixed;
+		box-shadow:0 0 5px #000;
+		transition:all 0.75s ease;
+	}
 }
