@@ -9,4 +9,13 @@ html, body {
 	padding:0px;
 	position:relative;
 	font-family:sans-serif;
+	overflow:hidden;
+}
+
+@media only screen and (max-width:1440px) and (min-width:769px) {
+
+	/*----
+		Edit Styles
+				----*/
+
 }
