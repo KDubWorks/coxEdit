@@ -13,7 +13,7 @@ for(var i = 0; i < inEdit.length; i++) {
 
 function open() {
 
-	if(inEdit !== null ) {
+	if(inEdit !== null) {
 
 		$("#edit-button").click(function() {
 
@@ -49,11 +49,37 @@ function open() {
 
 					editTitle.textContent = "Background Image Edit";
 
+				} else if(n == 1) {
+
+					editTitle.textContent = "Body Box Edit";
+
+				} else if(n == 2) {
+
+					editTitle.textContent = "Icon Edit";
+
+				} else if(n == 3) {
+
+					editTitle.textContent = "Heading Edit";
+
+				} else if(n == 4) {
+
+					editTitle.textContent = "Date Edit";
+
+				} else {
+
+					editTitle.textContent = "Button Edit";
+
 				}
 
 			});
 
 		}
+
+		$("#other-e").click(function() {
+
+			$("#edit-area").css("left", "-25em");
+
+		});
 
 		close();
 
@@ -74,7 +100,7 @@ function close() {
 		$(".bg-img").css("width", "100vw");
 		$("#title").css("border", "1vh solid #fff");
 
-		$("#edit-slide").css("left", "-25vw");
+		$("#edit-slide").css("left", "-25em");
 
 		setTimeout(function() {
 

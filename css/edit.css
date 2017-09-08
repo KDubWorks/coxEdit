@@ -119,19 +119,19 @@ html, body {
 		Edit Slide
 				----*/
 	#edit-slide {
-		width:25vw;
+		width:25em;
 		height:100vh;
 		overflow:scroll;
 		position:absolute;
 		z-index:10000;
 		top:0px;
-		left:-25vw;
+		left:-25em;
 		background-color:transparent;
 		transition:all 0.75s ease;
 	}
 
 	#in-edit-s {
-		width:25vw;
+		width:25em;
 		height:199.98vh;
 		overflow:hidden;
 		position:relative;
@@ -139,7 +139,7 @@ html, body {
 	}
 
 	.in-edit {
-		width:25vw;
+		width:25em;
 		height:33.33vh;
 		background-color:#fff;
 		position:absolute;
@@ -178,7 +178,7 @@ html, body {
 		Edit Area
 				----*/
 	#edit-area {
-		width:25vw;
+		width:25em;
 		min-height:100vh;
 		background-color:#fff;
 		position:absolute;
