@@ -1,0 +1,77 @@
+html, body {
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	margin:0px;
+	padding:0px;
+	position:relative;
+	font-family:sans-serif;
+}
+
+::-webkit-scrollbar {
+	display:none;
+}
+
+@media only screen and (min-width:1441px) {
+
+
+
+}
+
+@media only screen and (max-width:1440px) and (min-width:769px) {
+
+	#editBar {
+		position:absolute;
+		z-index:10000;
+		top:0px;
+		left:0px;
+		width:100vw;
+		height:auto;
+		background-color:#484848;
+	}
+
+	.e-bar {
+		padding:1vh 2.15vw;
+		font-size:2.25vh;
+		background-color:transparent;
+		color:#f8f8f8;
+		float:left;
+		text-transform:uppercase;
+		border:4px solid #484848;
+		outline:none;
+		background-color:#484848;
+	}
+
+	.e-bar:hover {
+		color:#484848;
+		background-color:#f8f8f8;
+		border:4px solid #f8f8f8;
+	}
+
+	/*Full Screen Editor*/
+	#full-screen-edit {
+		position:absolute;
+		width:100vw;
+		top:0px;
+		left:-100vw;
+		z-index:100000;
+		overflow-y:hidden;
+		overflow-x:scroll;
+		transition:all 0.75s ease;
+		background-color:#f8f8f8;
+	}
+
+	#full-s-sel {
+		width:99.99em;
+		height:100%;
+		transition:all 0.75s ease;
+	}
+
+	.f-sel {
+		width:33.33em;
+		height:50%;
+		float:left;
+		overflow:hidden;
+	}
+
+}
