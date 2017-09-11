@@ -50,6 +50,34 @@ $(window).on("load", function() {
 var landE = null;
 landE = document.getElementById("landing-edit");
 
+/*These are the editing sections and buttons*/
+var editS = document.querySelectorAll(".edit-sections");
+var editT = null;
+editT = document.querySelectorAll(".edit-title-button");
+var editTA = new Array();
+
+for(var i = 0; i < editT.length; i++) {
+	editTA[i] = editT[i];
+}
+
+/*These are the full selection options*/
+var fSSel = null;
+fSSel = document.querySelectorAll(".f-sel-button");
+var fSSelA = new Array();
+
+for(var i = 0; i < fSSel.length; i++) {
+	fSSelA[i] = fSSel[i];
+}
+
+/*This is for the background image editor*/
+var bgImgT = null;
+bgImgT = document.getElementById("img-preveiw-title");
+
+var fSH = $("#full-s-sel").height();
+
+/*This are the background images for the preview*/
+var backImg = $("#first-img").css("background-image");
+
 if(win <= 1440 && win >= 769) {
 
 	/*These are the user interactions with the edit bar*/
@@ -81,6 +109,80 @@ if(win <= 1440 && win >= 769) {
 			});
 
 		}
+
+	}
+
+	/*This will open the options at the landing page*/
+	if(editT !== null) {
+
+		for(var i = 0; i < editT.length; i++) {
+
+			$(editT[i]).click(function() {
+
+				var n = editTA.indexOf(this);
+
+				if(n == 0) {
+
+					$(editS[0]).css("height", "10em");
+
+				} else if(n == 1) {
+
+					$(editS[1]).css("height", "15em");
+
+				} else if(n == 2) {
+
+					$(editS[2]).css("height", "20em");
+
+				} else if(n == 3) {
+
+					$(editS[3]).css("height", "25em");
+
+				} else {
+
+					$(editS[4]).css("height", "10em");
+					$(editS[4]).css("margin-bottom", "4em");
+
+				}
+
+			});
+
+		}
+
+	}
+
+	/*This will work for the full screen selectors*/
+	if(fSSel !== null) {
+
+		for(var i = 0; i < fSSel.length; i++) {
+
+			$(fSSel[i]).click(function() {
+
+				var n = fSSelA.indexOf(this);
+
+				if(n == 0) {
+
+					$("#full-s-sel").css("top", "-" + fSH + "px");
+					setTimeout(function() {
+						$("#bg-edit").css("left", "0px");
+					}, 100);
+
+				}
+
+			});
+
+		}
+
+	}
+
+	/*This is specifically for the background images*/
+	if(bgImgT !== null) {
+
+		$(bgImgT).click(function() {
+
+			$("#image-preview").css("height", "75vh");
+			$("#image-preview").css("background", backImg);
+
+		});
 
 	}
 

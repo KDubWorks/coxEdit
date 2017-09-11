@@ -223,6 +223,7 @@ html, body {
 		margin-top:2.25vh;
 		margin-left:0.5em;
 		text-transform:uppercase;
+		cursor:default;
 	}
 
 	.open-button {
@@ -232,6 +233,70 @@ html, body {
 		position:absolute;
 		top:0.75em;
 		right:1em;
+	}
+
+	/*This is the background edit section*/
+	#bg-edit {
+		width:100vw;
+		height:100%;
+		background-color:#f8f8f8;
+		position:absolute;
+		z-index:1000000;
+		top:0px;
+		left:-100vw;
+		overflow-x:hidden;
+		overflow-y:scroll;
+		transition:all 0.75s ease;
+	}
+
+	#in-bg {
+		width:100%;
+		min-height:100%;
+	}
+
+	#image-preview {
+		width:95vw;
+		height:3em;
+		box-shadow:0 0 5px #484848;
+		position:relative;
+		margin-top:3vh;
+		margin-left:2.5vw;
+		background-size:cover;
+		background-repeat:no-repeat;
+		background-position:center center;
+		transition:all 0.75s ease;
+	}
+
+	#img-preveiw-title {
+		width:95vw;
+		height:3em;
+		background-color:#DCDCDC;
+		text-align:left;
+		overflow:hidden;
+		position:absolute;
+		top:0px;
+		left:0px;
+	}
+
+	#img-title {
+		margin-top:2.25vh;
+		margin-left:0.5em;
+		text-transform:uppercase;
+		cursor:default;
+	}
+
+	#first-bg-edit-opt {
+		overflow-y:scroll;
+		width:45vw;
+		height:75vh;
+		float:left;
+	}
+
+	#second-bg-edit-opt {
+		overflow-y:scroll;
+		width:45vw;
+		height:75vh;
+		float:right;
 	}
 
 }
