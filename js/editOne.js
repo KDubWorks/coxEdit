@@ -58,6 +58,7 @@ for(var i = 0; i < fSel.length; i++) {
 			
 			$("#bg-section").css("left", "0vw");
 			$("#bg-preview").css("background-image", bgPre);
+			$("#small-image").css("background-image", bgPre);
 
 		}
 

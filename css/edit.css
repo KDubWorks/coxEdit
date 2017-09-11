@@ -108,33 +108,132 @@ html, body {
 		transition:all 0.75s ease;
 	}
 
-	#bg-head {
-		width:20em;
-		font-size:3vh;
-		padding-top:1.5vh;
-		padding-bottom:1.5vh;
-		border:4px solid #484848;
-		text-transform:uppercase;
-		color:#484848;
-		margin:auto;
-		margin-top:3vh;
-		margin-bottom:1.5vh;
+	#editing-sections {
+		width:100vw;
+		height:100%;
+		position:absolute;
+		left:0px;
+		top:0px;
+		overflow-y:scroll;
+		overflow-x:hidden;
 	}
 
-	#back-preview {
-		width:50em;
-		height:80vh;
+	#small-image {
+		width:15em;
+		height:8em;
 		position:absolute;
-		z-index:100;
-		left:1em;
+		z-index:100000000;
+		background-repeat:no-repeat;
+		background-size:cover;
+		background-position:center center;
+		right:2vw;
+		top:3vh;
+		box-shadow:0 0 15px #000;
+		display:none;
+	}
+
+	#in-edit {
+		width:100%;
+		height:200vh;
+		position:relative;
 	}
 
 	#bg-preview {
-		width:45em;
-		height:20em;
+		width:95vw;
+		height:82vh;
 		background-repeat:no-repeat;
 		background-position:center center;
 		background-size:cover;
+		margin-left:2.5vw;
+		margin-top:3vh;
+		box-shadow:inset 0 0 0 800px rgba(56,56,56,0.4);
+	}
+
+	#editing-area {
+		width:100vw;
+		height:100vh;
+		position:absolute;
+		bottom:0px;
+		left:0px;
+		overflow:hidden;
+	}
+
+	/*Background Image Editor Sections*/
+	.editing-title {
+		width:40vw;
+		height:3em;
+		background-color:#E0E0E0;
+		overflow:hidden;
+		text-align:left;
+	}
+
+	.ed-title {
+		line-height:0px;
+		margin-top:1.25em;
+		margin-left:1em;
+		text-transform:uppercase;
+	}
+
+	#first-edits {
+		width:45vw;
+		height:35em;
+		position:absolute;
+		top:9.75vh;
+		left:2.5vw;
+		overflow-x:hidden;
+	}
+
+	#background-image-count {
+		width:40vw;
+		height:10em;
+		margin-left:2.5vw;
+		float:left;
+		transition:all 0.75s ease;
+		box-shadow:0 0 5px #707070;
+		margin-top:0.5em;
+		overflow:hidden;
+	}
+
+	#background-image-animation {
+		width:40vw;
+		height:20em;
+		margin-left:2.5vw;
+		float:left;
+		transition:all 0.75s ease;
+		box-shadow:0 0 5px #707070;
+		margin-top:2em;
+		overflow:hidden;
+	}
+
+	#second-edits {
+		width:45vw;
+		height:50em;
+		position:absolute;
+		top:9.75vh;
+		right:2.5vw;
+		overflow-x:hidden;
+	}
+
+	#background-image-sel {
+		width:40vw;
+		height:20em;
+		margin-left:2.5vw;
+		float:left;
+		margin-top:0.5em;
+		transition:all 0.75s ease;
+		box-shadow:0 0 5px #707070;
+		overflow:hidden;
+	}
+
+	#background-image-shadow {
+		width:40vw;
+		height:12em;
+		overflow:hidden;
+		margin-left:2.5vw;
+		float:left;
+		margin-top:2em;
+		transition:all 0.75s ease;
+		box-shadow:0 0 5px #707070;
 	}
 
 }
