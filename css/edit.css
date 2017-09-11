@@ -301,4 +301,15 @@ html, body {
 		float:right;
 	}
 
+	/*This is the event details edit*/
+	#event-details-edit {
+		width:100vw;
+		height:100%;
+		background-color:#f8f8f8;
+		position:absolute;
+		top:0px;
+		left:-100vw;
+		transition:all 0.75s ease;
+	}
+
 }
