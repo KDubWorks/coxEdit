@@ -202,6 +202,7 @@ html, body {
 		Text Area
 				----*/
 	#text-area {
+		display:none;
 		position:absolute;
 		z-index:1000;
 		width:60vw;
@@ -212,31 +213,6 @@ html, body {
 		text-align:center;
 		box-shadow:0 0 10px #484848;
 		background-color:rgba(32,32,32,0.6);
-	}
-
-	#text-title {
-		text-transform:uppercase;
-		font-size:4vh;
-		color:#fff;
-		line-height:0px;
-		margin-top:5vh;
-		margin-bottom:5vh;
-	}
-
-	#text-link {
-		text-decoration:none;
-	}
-
-	#text-link-button {
-		padding:1vh 3vw;
-		border:4px solid #fff;
-		text-transform:uppercase;
-		font-weight:bold;
-		color:#fff;
-		font-size:2vh;
-		margin-bottom:2vh;
-		background-color:transparent;
-		outline:none;
 	}
 
 }
