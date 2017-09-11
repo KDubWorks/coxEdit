@@ -189,7 +189,7 @@ if(win <= 1440 && win >= 769) {
 
 					$("#full-s-sel").css("top", "-" + fSH + "px");
 					setTimeout(function() {
-						$("#bg-edit").css("left", "0px");
+						$("#event-details-edit").css("left", "0px");
 					}, 100);
 
 				}

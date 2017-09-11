@@ -292,6 +292,7 @@ html, body {
 		width:45vw;
 		height:75vh;
 		float:left;
+		margin-left:2.5vw;
 	}
 
 	#second-bg-edit-opt {
@@ -299,6 +300,7 @@ html, body {
 		width:45vw;
 		height:75vh;
 		float:right;
+		margin-right:2.5vw;
 	}
 
 	/*This is the event details edit*/
@@ -307,9 +309,33 @@ html, body {
 		height:100%;
 		background-color:#f8f8f8;
 		position:absolute;
+		z-index:1000000;
 		top:0px;
 		left:-100vw;
 		transition:all 0.75s ease;
+	}
+
+	#ev-in-deets {
+		width:100vw;
+		min-height:100%;
+		transition:all 0.75s ease;
+		position:relative;
+	}
+
+	#first-ed-deets {
+		width:45vw;
+		height:85vh;
+		position:absolute;
+		left:2.5vw;
+		bottom:2vh;
+	}
+
+	#second-ed-deets {
+		width:45vw;
+		height:85vh;
+		position:absolute;
+		right:2.5vw;
+		bottom:2vh;
 	}
 
 }
