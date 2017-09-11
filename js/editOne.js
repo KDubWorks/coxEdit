@@ -37,21 +37,28 @@ for(var i = 0; i < eBar.length; i++) {
 
 }
 
-var fSel = document.querySelectorAll(".f-sel");
+var fSel = document.querySelectorAll(".f-sel-button");
 var fSelA = new Array();
+var fsH = $("#full-s-sel").height();
 
 for(var i = 0; i < fSel.length; i++) {
 	fSelA[i] = fSel[i];
 }
+
+var bgPre = $("#first-img").css("background-image");
 
 for(var i = 0; i < fSel.length; i++) {
 
 	$(fSel[i]).click(function() {
 
 		var n = fSelA.indexOf(this);
+		$("#full-s-sel").css("top", "-" + fsH + "px");
 
 		if(n == 0) {
-			$("#full-s-sel").css("margin-left", "-100vw");
+			
+			$("#bg-section").css("left", "0vw");
+			$("#bg-preview").css("background-image", bgPre);
+
 		}
 
 	});
