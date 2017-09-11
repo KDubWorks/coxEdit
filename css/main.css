@@ -216,11 +216,11 @@ html, body {
 
 	#text-title {
 		text-transform:uppercase;
-		font-size:7vh;
+		font-size:9vh;
 		color:#fff;
 		line-height:0px;
 		margin-top:5vh;
-		margin-bottom:5vh;
+		margin-bottom:8vh;
 	}
 
 	#text-link {
@@ -233,7 +233,7 @@ html, body {
 		text-transform:uppercase;
 		font-weight:bold;
 		color:#fff;
-		font-size:3vh;
+		font-size:4vh;
 		margin-bottom:2vh;
 		background-color:transparent;
 		outline:none;

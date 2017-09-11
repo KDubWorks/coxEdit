@@ -19,11 +19,11 @@ if(win >= 426 && win <= 768) {
 
 	$(window).on("load", function() {
 
-		$("#text-area").css("top", remain + "px");
+		$("#text-area").css("top", remain + 20 + "px");
 		$("#text-area-icon").attr("src", "img/icons/powerOnDisplay.png");
 
 	});
-	
+
 }
 
 if(win <= 425) {
