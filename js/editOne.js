@@ -1,134 +1,87 @@
 var win = $(window).width();
 var winH = $(window).height();
-var editBar = $("#editBar").height();
+var edH = null;
+edH = $("#editBar").height();
 
-var editH = winH - editBar;
+var rem = winH - edH;
 
-if(win >= 769 && win <= 1440) {
-
-	$("#full-screen-edit").css("top", editBar + "px");
-	$("#full-screen-edit").css("height", editH + "px");
-	$("#preview-edit").css("height", editH + "px");
-
-}
-
-var eBar = document.querySelectorAll(".e-bar");
+/*These are the edit bar options*/
+var eBar = null;
+eBar = document.querySelectorAll(".e-bar");
 var eBarA = new Array();
 
-for(var i = 0; i < eBar.length; i++) {
-	eBarA[i] = eBar[i];
-}
+//This will place all the selections in the array
+if(eBar !== null) {
 
-for(var i = 0; i < eBar.length; i++) {
+	for(var i = 0; i < eBar.length; i++) {
 
-	$(eBar[i]).click(function() {
+		eBarA[i] = eBar[i];
 
-		var n = eBarA.indexOf(this);
-
-		if(n == 0) {
-
-			$(eBar[0]).css("background-color", "#f8f8f8");
-			$(eBar[0]).css("border", "4px solid #f8f8f8");
-			$(eBar[0]).css("color", "#484848");
-			$("#preview-edit").css("left", "0em");
-
-		} else if(n == 1) {
-
-			$(eBar[1]).css("background-color", "#f8f8f8");
-			$(eBar[1]).css("border", "4px solid #f8f8f8");
-			$(eBar[1]).css("color", "#484848");
-			$("#full-screen-edit").css("left", "0vw");
-
-		} 
-
-	});
+	}
 
 }
 
-var fSel = document.querySelectorAll(".f-sel-button");
-var fSelA = new Array();
-var fsH = $("#full-s-sel").height();
+/*These are the full screen editing options*/
+var fSelB = null;
+fSelB = document.querySelectorAll(".f-sel-button");
+var fSelBA = new Array();
 
-for(var i = 0; i < fSel.length; i++) {
-	fSelA[i] = fSel[i];
+//This will place all the selections in the array
+if(fSelB !== null) {
+
+	for(var i = 0; i < fSelB.length; i++) {
+
+		fSelBA[i] = fSelB[i];
+
+	}
+
 }
 
-var bgPre = $("#first-img").css("background-image");
+$(window).on("load", function() {
 
-for(var i = 0; i < fSel.length; i++) {
+	if(edH !== null) {
+		$("#full-screen-edit").css("height", rem + "px");
+		$("#full-screen-edit").css("top", edH + "px");
+	}
 
-	$(fSel[i]).click(function() {
+});
 
-		var n = fSelA.indexOf(this);
-		$("#full-s-sel").css("top", "-" + fsH + "px");
+/*This will be the landing edit page*/
+var landE = null;
+landE = document.getElementById("landing-edit");
 
-		if(n == 0) {
-			
-			$("#bg-section").css("left", "0vw");
-			$("#bg-preview").css("background-image", bgPre);
-			$("#small-image").css("background-image", bgPre);
+if(win <= 1440 && win >= 769) {
 
-		} else if(n == 1) {
+	/*These are the user interactions with the edit bar*/
+	if(eBar !== null) {
 
-			alert("Hello");
+		for(var i = 0; i < eBar.length; i++) {
 
-		} else if(n == 2) {
+			$(eBar[i]).click(function() {
 
-			$("#icon-section").css("left", "0vw");
+				var n = eBarA.indexOf(this);
+
+				if(n == 1) {
+
+					$(eBar[1]).css("background-color", "#f8f8f8");
+					$(eBar[1]).css("border", "4px solid #f8f8f8");
+					$(eBar[1]).css("color", "#484848");
+
+					//This will pull the full screen editor out
+					$("#full-screen-edit").css("left", "0px");
+
+					if(landE !== null) {
+
+						$("#landing-edit").css("left", "0px");
+
+					}
+
+				}
+
+			});
 
 		}
 
-	});
+	}
 
 }
-
-var edTitle = document.querySelectorAll(".editing-title");
-var edTitleA = new Array();
-
-for(var i = 0; i < edTitle.length; i++) {
-	edTitleA[i] = edTitle[i];
-}
-
-for(var i = 0; i < edTitle.length; i++) {
-
-	$(edTitle[i]).click(function() {
-
-		var n = edTitleA.indexOf(this);
-
-		if(n == 0) {
-			$("#background-image-count").css("height", "10em");
-		} else if(n == 1) {
-			$("#background-image-animation").css("height", "15em");
-		} else if(n == 2) {
-			$("#background-image-sel").css("height", "20em");
-		} else {
-			$("#background-image-shadow").css("height", "12em");
-		}
-
-	});
-
-}
-
-/*Preview Buttons*/
-var pButton = document.querySelectorAll(".pre-buttons");
-var pButtonA = new Array();
-
-for(var i = 0; i < pButton.length; i++) {
-	pButtonA[i] = pButton[i];
-}
-
-for(var i = 0; i < pButton.length; i++) {
-
-	$(pButton[i]).click(function() {
-
-		var n = pButtonA.indexOf(this);
-
-		if(n == 0) {
-			$(pButton[0]).css("margin-bottom", "85vh");
-		}
-
-	});
-
-}
-
-

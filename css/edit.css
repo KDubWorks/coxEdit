@@ -48,6 +48,20 @@ html, body {
 		border:4px solid #f8f8f8;
 	}
 
+	#options {
+		position:absolute;
+		top:1.25vh;
+		right:7vw;
+		font-size:2vh;
+		padding:0.5vh 1vw;
+		border:none;
+		text-transform:uppercase;
+		background-color:#f8f8f8;
+		border-radius:15px;
+		outline:none;
+		display:none;
+	}
+
 	#close {
 		position:absolute;
 		top:1.25vh;
@@ -59,6 +73,7 @@ html, body {
 		background-color:#f8f8f8;
 		border-radius:15px;
 		outline:none;
+		display:none;
 	}
 
 	/*Preview Screen*/
@@ -115,6 +130,7 @@ html, body {
 		left:0px;
 		height:auto;
 		width:100vw;
+		z-index:1000000;
 		overflow-y:hidden;
 		overflow-x:scroll;
 		transition:all 0.3s ease;
@@ -122,7 +138,7 @@ html, body {
 
 	#full-in-s-sel {
 		height:auto;
-		width:120em;
+		width:100em;
 	}
 
 	.f-sel-button {
@@ -145,213 +161,77 @@ html, body {
 		background-color:#A0A0A0;
 	}
 
-	/*Background Image Editor*/
-	#bg-section {
-		width:100vw;
-		height:100%;
-		position:absolute;
-		z-index:10000;
-		text-align:center;
-		left:-100vw;
-		overflow:hidden;
-		transition:all 0.75s ease;
-	}
-
-	#editing-sections {
-		width:100vw;
-		height:100%;
-		position:absolute;
-		left:0px;
-		top:0px;
-		overflow-y:scroll;
-		overflow-x:hidden;
-	}
-
-	#small-image {
-		width:15em;
-		height:8em;
-		position:absolute;
-		z-index:100000000;
-		background-repeat:no-repeat;
-		background-size:cover;
-		background-position:center center;
-		right:2vw;
-		top:3vh;
-		box-shadow:0 0 15px #000;
-		display:none;
-	}
-
-	#in-edit {
-		width:100%;
-		height:200vh;
-		position:relative;
-	}
-
-	#bg-preview {
-		width:95vw;
-		height:82vh;
-		background-repeat:no-repeat;
-		background-position:center center;
-		background-size:cover;
-		margin-left:2.5vw;
-		margin-top:3vh;
-		box-shadow:inset 0 0 0 800px rgba(56,56,56,0.4);
-	}
-
-	#editing-area {
-		width:100vw;
-		height:100vh;
-		position:absolute;
-		bottom:0px;
-		left:0px;
-		overflow:hidden;
-	}
-
-	/*Background Image Editor Sections*/
-	.editing-title {
-		width:40vw;
-		height:3em;
-		background-color:#E0E0E0;
-		overflow:hidden;
-		text-align:left;
-	}
-
-	.ed-title {
-		line-height:0px;
-		margin-top:1.25em;
-		margin-left:1em;
-		text-transform:uppercase;
-	}
-
-	#first-edits {
-		width:45vw;
-		height:35em;
-		position:absolute;
-		top:9.75vh;
-		left:2.5vw;
-		overflow-x:hidden;
-	}
-
-	#background-image-count {
-		width:40vw;
-		height:3em;
-		margin-left:2.5vw;
-		float:left;
-		transition:all 0.75s ease;
-		box-shadow:0 0 5px #707070;
-		margin-top:0.5em;
-		overflow:hidden;
-	}
-
-	#background-image-animation {
-		width:40vw;
-		height:3em;
-		margin-left:2.5vw;
-		float:left;
-		transition:all 0.75s ease;
-		box-shadow:0 0 5px #707070;
-		margin-top:2em;
-		overflow:hidden;
-	}
-
-	#second-edits {
-		width:45vw;
-		height:50em;
-		position:absolute;
-		top:9.75vh;
-		right:2.5vw;
-		overflow-x:hidden;
-	}
-
-	#background-image-sel {
-		width:40vw;
-		height:3em;
-		margin-left:2.5vw;
-		float:left;
-		margin-top:0.5em;
-		transition:all 0.75s ease;
-		box-shadow:0 0 5px #707070;
-		overflow:hidden;
-	}
-
-	#background-image-shadow {
-		width:40vw;
-		height:3em;
-		overflow:hidden;
-		margin-left:2.5vw;
-		float:left;
-		margin-top:2em;
-		transition:all 0.75s ease;
-		box-shadow:0 0 5px #707070;
-	}
-
-	/*Icon Image Section*/
-	#icon-section {
+	/*Landing Edit*/
+	#landing-edit {
 		width:100vw;
 		height:100%;
 		background-color:#f8f8f8;
 		text-align:center;
 		position:absolute;
-		z-index:1000000;
+		z-index:10000;
 		top:0px;
 		left:-100vw;
 		transition:all 0.75s ease;
 	}
 
-	#in-icon-pre {
-		width:25em;
-		height:45vh;
-		margin-top:20vh;
-		margin-left:5vw;
-		text-align:center;
-	}
-
-	#icon-preview {
-		width:25em;
-		height:40vh;
-		background-color:#D0D0D0;
-	}
-
-	#icon-pre {
-		padding-top:1vh;
-		padding-bottom:1vh;
-		color:#484848;
-		text-transform:uppercase;
-		font-size:2.5vh;
-		border:4px solid #484848;
-		width:10em;
-		margin:auto;
-		margin-top:1vh;
-		background-color:transparent;
-	}
-
-	#icon-edit-area {
+	/*These are the landing edit options*/
+	#landing-edit-one {
+		overflow-y:scroll;
 		width:45vw;
-		height:80vh;
+		height:85vh;
+		position:absolute;
+		left:2.5vw;
+		bottom:2vh;
+		transition:all 0.75s ease;
+	}
+
+	#landing-edit-two {
+		overflow-y:scroll;
+		width:45vw;
+		height:85vh;
 		position:absolute;
 		right:2.5vw;
-		top:10vh;
-	}
-
-	#icon-area {
-		width:40vw;
-		height:20em;
-		margin-left:2.5vw;
-		float:left;
+		bottom:2vh;
 		transition:all 0.75s ease;
-		box-shadow:0 0 5px #707070;
-		overflow:hidden;
 	}
 
-	#icon-size {
+	.edit-sections {
 		width:40vw;
 		height:3em;
-		margin-left:2.5vw;
-		float:left;
-		margin-top:2em;
+		background-color:#f8f8f8;
+		color:#484848;
+		text-align:center;
 		transition:all 0.75s ease;
-		box-shadow:0 0 5px #707070;
+		box-shadow:0 0 5px #484848;
+		position:relative;
+		margin-left:2.5vw;
+		margin-top:4vh;
+	}
+
+	.edit-title-button {
+		width:40vw;
+		height:3em;
+		background-color:#DCDCDC;
+		text-align:left;
 		overflow:hidden;
+		position:absolute;
+		top:0px;
+		left:0px;
+	}
+
+	.edit-title {
+		margin-top:2.25vh;
+		margin-left:0.5em;
+		text-transform:uppercase;
+	}
+
+	.open-button {
+		width:1.5em;
+		height:1.5em;
+		box-shadow:0 0 0 1px #484848;
+		position:absolute;
+		top:0.75em;
+		right:1em;
 	}
 
 }
