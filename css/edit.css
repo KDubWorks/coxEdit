@@ -18,7 +18,7 @@ html, body {
 
 }
 
-@media only screen and (max-width:1440px) and (min-width:769px) {
+@media only screen and (max-width:1440px) and (min-width:815px) {
 
 	#editBar {
 		position:absolute;
@@ -46,6 +46,19 @@ html, body {
 		color:#484848;
 		background-color:#f8f8f8;
 		border:4px solid #f8f8f8;
+	}
+
+	#close {
+		position:absolute;
+		top:1.25vh;
+		right:1vw;
+		font-size:2vh;
+		padding:0.5vh 1vw;
+		border:none;
+		text-transform:uppercase;
+		background-color:#f8f8f8;
+		border-radius:15px;
+		outline:none;
 	}
 
 	/*Preview Screen*/
@@ -102,7 +115,8 @@ html, body {
 		left:0px;
 		height:auto;
 		width:100vw;
-		overflow:hidden;
+		overflow-y:hidden;
+		overflow-x:scroll;
 		transition:all 0.3s ease;
 	}
 
@@ -269,6 +283,75 @@ html, body {
 		margin-top:2em;
 		transition:all 0.75s ease;
 		box-shadow:0 0 5px #707070;
+	}
+
+	/*Icon Image Section*/
+	#icon-section {
+		width:100vw;
+		height:100%;
+		background-color:#f8f8f8;
+		text-align:center;
+		position:absolute;
+		z-index:1000000;
+		top:0px;
+		left:-100vw;
+		transition:all 0.75s ease;
+	}
+
+	#in-icon-pre {
+		width:25em;
+		height:45vh;
+		margin-top:20vh;
+		margin-left:5vw;
+		text-align:center;
+	}
+
+	#icon-preview {
+		width:25em;
+		height:40vh;
+		background-color:#D0D0D0;
+	}
+
+	#icon-pre {
+		padding-top:1vh;
+		padding-bottom:1vh;
+		color:#484848;
+		text-transform:uppercase;
+		font-size:2.5vh;
+		border:4px solid #484848;
+		width:10em;
+		margin:auto;
+		margin-top:1vh;
+		background-color:transparent;
+	}
+
+	#icon-edit-area {
+		width:45vw;
+		height:80vh;
+		position:absolute;
+		right:2.5vw;
+		top:10vh;
+	}
+
+	#icon-area {
+		width:40vw;
+		height:20em;
+		margin-left:2.5vw;
+		float:left;
+		transition:all 0.75s ease;
+		box-shadow:0 0 5px #707070;
+		overflow:hidden;
+	}
+
+	#icon-size {
+		width:40vw;
+		height:3em;
+		margin-left:2.5vw;
+		float:left;
+		margin-top:2em;
+		transition:all 0.75s ease;
+		box-shadow:0 0 5px #707070;
+		overflow:hidden;
 	}
 
 }

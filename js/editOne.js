@@ -68,6 +68,14 @@ for(var i = 0; i < fSel.length; i++) {
 			$("#bg-preview").css("background-image", bgPre);
 			$("#small-image").css("background-image", bgPre);
 
+		} else if(n == 1) {
+
+			alert("Hello");
+
+		} else if(n == 2) {
+
+			$("#icon-section").css("left", "0vw");
+
 		}
 
 	});
