@@ -66,3 +66,30 @@ for(var i = 0; i < fSel.length; i++) {
 
 }
 
+var edTitle = document.querySelectorAll(".editing-title");
+var edTitleA = new Array();
+
+for(var i = 0; i < edTitle.length; i++) {
+	edTitleA[i] = edTitle[i];
+}
+
+for(var i = 0; i < edTitle.length; i++) {
+
+	$(edTitle[i]).click(function() {
+
+		var n = edTitleA.indexOf(this);
+
+		if(n == 0) {
+			$("#background-image-count").css("height", "10em");
+		} else if(n == 1) {
+			$("#background-image-animation").css("height", "15em");
+		} else if(n == 2) {
+			$("#background-image-sel").css("height", "20em");
+		} else {
+			$("#background-image-shadow").css("height", "12em");
+		}
+
+	});
+
+}
+

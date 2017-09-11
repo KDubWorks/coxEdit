@@ -185,7 +185,7 @@ html, body {
 
 	#background-image-count {
 		width:40vw;
-		height:10em;
+		height:3em;
 		margin-left:2.5vw;
 		float:left;
 		transition:all 0.75s ease;
@@ -196,7 +196,7 @@ html, body {
 
 	#background-image-animation {
 		width:40vw;
-		height:20em;
+		height:3em;
 		margin-left:2.5vw;
 		float:left;
 		transition:all 0.75s ease;
@@ -216,7 +216,7 @@ html, body {
 
 	#background-image-sel {
 		width:40vw;
-		height:20em;
+		height:3em;
 		margin-left:2.5vw;
 		float:left;
 		margin-top:0.5em;
@@ -227,7 +227,7 @@ html, body {
 
 	#background-image-shadow {
 		width:40vw;
-		height:12em;
+		height:3em;
 		overflow:hidden;
 		margin-left:2.5vw;
 		float:left;
