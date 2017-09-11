@@ -137,10 +137,22 @@ if(win <= 1440 && win >= 769) {
 
 					$(editS[3]).css("height", "25em");
 
-				} else {
+				} else if(n == 4) {
 
 					$(editS[4]).css("height", "10em");
 					$(editS[4]).css("margin-bottom", "4em");
+
+				} else if(n == 5) {
+
+					$(editS[5]).css("height", "10em");
+
+				} else if(n == 6) {
+
+					$(editS[6]).css("height", "10em");
+
+				} else if(n == 7) {
+
+					$(editS[7]).css("height", "15em");
 
 				}
 
@@ -160,6 +172,20 @@ if(win <= 1440 && win >= 769) {
 				var n = fSSelA.indexOf(this);
 
 				if(n == 0) {
+
+					$("#full-s-sel").css("top", "-" + fSH + "px");
+					setTimeout(function() {
+						$("#bg-edit").css("left", "0px");
+					}, 100);
+
+				} else if(n == 1) {
+
+					$("#full-s-sel").css("top", "-" + fSH + "px");
+					setTimeout(function() {
+						$("#bg-edit").css("left", "0px");
+					}, 100);
+
+				} else if(n == 2) {
 
 					$("#full-s-sel").css("top", "-" + fSH + "px");
 					setTimeout(function() {

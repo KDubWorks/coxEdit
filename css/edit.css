@@ -217,6 +217,7 @@ html, body {
 		position:absolute;
 		top:0px;
 		left:0px;
+		transition:all 0.75s ease;
 	}
 
 	.edit-title {
@@ -276,6 +277,7 @@ html, body {
 		position:absolute;
 		top:0px;
 		left:0px;
+		transition:all 0.75s ease;
 	}
 
 	#img-title {
