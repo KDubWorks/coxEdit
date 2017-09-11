@@ -8,6 +8,7 @@ if(win >= 769 && win <= 1440) {
 
 	$("#full-screen-edit").css("top", editBar + "px");
 	$("#full-screen-edit").css("height", editH + "px");
+	$("#preview-edit").css("height", editH + "px");
 
 }
 
@@ -24,14 +25,21 @@ for(var i = 0; i < eBar.length; i++) {
 
 		var n = eBarA.indexOf(this);
 
-		if(n == 1) {
+		if(n == 0) {
+
+			$(eBar[0]).css("background-color", "#f8f8f8");
+			$(eBar[0]).css("border", "4px solid #f8f8f8");
+			$(eBar[0]).css("color", "#484848");
+			$("#preview-edit").css("left", "0em");
+
+		} else if(n == 1) {
 
 			$(eBar[1]).css("background-color", "#f8f8f8");
 			$(eBar[1]).css("border", "4px solid #f8f8f8");
 			$(eBar[1]).css("color", "#484848");
 			$("#full-screen-edit").css("left", "0vw");
 
-		}
+		} 
 
 	});
 
@@ -92,4 +100,27 @@ for(var i = 0; i < edTitle.length; i++) {
 	});
 
 }
+
+/*Preview Buttons*/
+var pButton = document.querySelectorAll(".pre-buttons");
+var pButtonA = new Array();
+
+for(var i = 0; i < pButton.length; i++) {
+	pButtonA[i] = pButton[i];
+}
+
+for(var i = 0; i < pButton.length; i++) {
+
+	$(pButton[i]).click(function() {
+
+		var n = pButtonA.indexOf(this);
+
+		if(n == 0) {
+			$(pButton[0]).css("margin-bottom", "85vh");
+		}
+
+	});
+
+}
+
 
