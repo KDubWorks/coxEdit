@@ -171,6 +171,31 @@ html, body {
 
 @media only screen and (max-width:650px) and (orientation:landscape) {
 
+	/*----
+		Background Image
+						----*/
+	#back-body {
+		width:100vw;
+		height:100vh;
+		overflow:hidden;
+	}
 
+	#bg-in-overflow {
+		width:100vw;
+		height:100vh;
+		transition:all 0.75s ease;
+	}
+
+	.bg-imgs {
+		width:100vw;
+		height:100vh;
+		background-size:cover;
+		background-repeat:no-repeat;
+		background-position:center center;
+	}
+
+	.bg-imgs:first-child {
+		background-image:url("../img/home/phone/hotel_phone_l.jpg");
+	}
 
 }
