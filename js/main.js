@@ -1,38 +1,24 @@
-var win = $(window).width();
-var winH = $(window).height();
-var tA = $("#text-area").height();
+var win = $(window).height();
+var bodyIn = $("#body-info").height();
 
-var remain = ((winH - tA) / 2) - 35;
+var remain = (win - bodyIn - 40) / 2;
 
-if(win >= 769 && win <=  1440) {
+$(window).on("load", function() {
 
-	$(window).on("load", function() {
+	$("#body-info").css("top", remain + "px");
 
-		$("#text-area").css("top", remain + "px");
-		$("#text-area-icon").attr("src", "img/icons/powerOnDisplay.png");
+});
 
-	});
+window.addEventListener("orientationchange", function() {
 
-}
+	if(window.orientation == -90 || window.orientation == 90) {
 
-if(win >= 426 && win <= 768) {
+		alert("This is landscape");
 
-	$(window).on("load", function() {
+	} else {
 
-		$("#text-area").css("top", remain + 20 + "px");
-		$("#text-area-icon").attr("src", "img/icons/powerOnDisplay.png");
+		alert("This is portrait");
 
-	});
+	}
 
-}
-
-if(win <= 425) {
-
-	$(window).on("load", function() {
-
-		$("#text-area").css("top", remain + "px");
-		$("#text-area-icon").attr("src", "img/icons/powerOnDisplay.png");
-
-	});
-
-}
+});
