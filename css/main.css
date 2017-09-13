@@ -292,15 +292,15 @@ html, body {
 	}
 
 	#title-img {
-		width:30vw;
+		width:10vw;
 		height:auto;
 	}
 
 	#title {
-		margin-top:5vh;
-		margin-bottom:5vh;
+		margin-top:5vw;
+		margin-bottom:5vw;
 		line-height:0px;
-		font-size:4vh;
+		font-size:4vw;
 		color:#fff;
 		text-transform:uppercase;
 	}
@@ -328,7 +328,7 @@ html, body {
 	}
 
 	#start > h3, #finish > h3 {
-		font-size:3vh;
+		font-size:3vw;
 		margin-top:0vh;
 		color:#fff;
 		text-transform:uppercase;
@@ -339,15 +339,15 @@ html, body {
 	}
 
 	#web-link > button {
-		padding:1.5vh 4vw;
-		font-size:2.5vh;
+		padding:1.5vw 4vw;
+		font-size:2.5vw;
 		text-transform:uppercase;
 		font-weight:bold;
 		background-color:transparent;
 		color:#fff;
 		outline:none;
-		border:1vh solid #fff;
-		margin-top:3vh;
+		border:1vw solid #fff;
+		margin-top:3vw;
 	}
 
 }
