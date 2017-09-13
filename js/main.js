@@ -20,6 +20,8 @@ window.addEventListener("orientationchange", function() {
 
 		$("#body-info").css("top", remain + "px");
 
+		alert($(window).width());
+
 	} else {
 
 		var win = $(window).height();
