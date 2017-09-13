@@ -135,7 +135,7 @@ html, body {
 
 }
 
-@media only screen and (max-width:425px) and (orientation:landscape) {
+@media only screen and (max-width:500px) and (orientation:landscape) {
 
 	/*Back body*/
 	#back-body-area {
