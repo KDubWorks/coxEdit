@@ -140,12 +140,6 @@ html, body {
 
 }
 
-@media only screen and (max-width:768px) and (min-width:426px) and (orientation:portrait) {
-
-
-
-}
-
 @media only screen and (max-width:425px) and (orientation:portrait) {
 
 	/*Back body*/
@@ -252,7 +246,7 @@ html, body {
 
 }
 
-@media only screen and (max-width:500px) and (orientation:landscape) {
+@media only screen and (max-width:768px) and (orientation:landscape) {
 
 	/*Back body*/
 	#back-body-area {
