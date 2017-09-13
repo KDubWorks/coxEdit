@@ -13,11 +13,21 @@ window.addEventListener("orientationchange", function() {
 
 	if(window.orientation == -90 || window.orientation == 90) {
 
-		alert("This is landscape");
+		var win = $(window).height();
+		var bodyI = $("#body-info").height();
+
+		var rem = (win - bodyIn - 40) / 2;
+
+		$("#body-info").css("top", remain + "px");
 
 	} else {
 
-		alert("This is portrait");
+		var win = $(window).height();
+		var bodyI = $("#body-info").height();
+
+		var rem = (win - bodyIn - 40) / 2;
+
+		$("#body-info").css("top", remain + "px");
 
 	}
 

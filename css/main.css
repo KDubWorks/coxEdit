@@ -137,6 +137,106 @@ html, body {
 
 @media only screen and (max-width:425px) and (orientation:landscape) {
 
+	/*Back body*/
+	#back-body-area {
+		width:100vw;
+		height:100vh;
+		overflow:hidden;
+		position:relative;
+	}
 
+	#in-back-body-area {
+		min-width:100vw;
+		height:100vh;
+	}
+
+	.main-back {
+		width:100vw;
+		height:100vh;
+		background-color:#00ff99;
+	}
+
+	/*Body Info*/
+	#body-info {
+		width:90vw;
+		height:auto;
+		position:absolute;
+		z-index:1000;
+		left:5vw;
+		top:0vh;
+		overflow:hidden;
+	}
+
+	#in-body-info {
+		min-width:90vw;
+		height:auto;
+	}
+
+	.body-part {
+		width:90vw;
+		height:auto;
+		padding-top:5vh;
+		padding-bottom:5vh;
+		text-align:center;
+	}
+
+	#title-img {
+		width:30vw;
+		height:auto;
+	}
+
+	#title {
+		margin-top:5vh;
+		margin-bottom:5vh;
+		line-height:0px;
+		font-size:4vh;
+		color:#fff;
+		text-transform:uppercase;
+	}
+
+	#date {
+		width:60%;
+		height:auto;
+		margin:auto;
+		text-align:center;
+		color:#fff;
+	}
+
+	#start {
+		width:50%;
+		height:auto;
+		float:left;
+		text-align:center;
+	}
+
+	#finish {
+		width:50%;
+		height:auto;
+		float:left;
+		text-align:center;    
+	}
+
+	#start > h3, #finish > h3 {
+		font-size:3vh;
+		margin-top:0vh;
+		color:#fff;
+		text-transform:uppercase;
+	}
+
+	#web-link {
+		text-decoration:none;
+	}
+
+	#web-link > button {
+		padding:1.5vh 4vw;
+		font-size:2.5vh;
+		text-transform:uppercase;
+		font-weight:bold;
+		background-color:transparent;
+		color:#fff;
+		outline:none;
+		border:1vh solid #fff;
+		margin-top:3vh;
+	}
 
 }
